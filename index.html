@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Identicon Test</title>
+    <script type="text/javascript" src="./dist/worker.js"></script>
+    <script type="text/javascript">
+        var data = generate('6b3eb288cd0ac76efa64097b38a81cb6e23ae031', 100);
+    </script>
+</head>
+<body>
+    <h2>Identicon Test</h2>
+
+    <img id="out" src="">
+
+    <script type="text/javascript">
+        document.getElementById('out').setAttribute('src', data);
+    </script>
+</body>
+</html>

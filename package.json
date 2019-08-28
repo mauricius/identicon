@@ -1,0 +1,31 @@
+{
+  "name": "identicon",
+  "version": "0.1.0",
+  "description": "An Identicon service for Cloudflare Workers",
+  "main": "dist/worker.js",
+  "scripts": {
+    "build": "webpack -p --progress --colors",
+    "watch": "webpack --watch",
+    "preview": "./scripts/open-preview < dist/worker.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "format": "prettier --write '**/*.{js,css,json,md}'"
+  },
+  "author": "mauricius <maurizio.bonani@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mauricius/identicon.git"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mauricius/identicon/issues"
+  },
+  "homepage": "https://github.com/mauricius/identicon",
+  "dependencies": {
+    "canvas-renderer": "^2.1.1",
+    "prettier": "^1.18.2",
+    "webpack": "^4.10.2",
+    "webpack-cli": "^3.1.1"
+  },
+  "sideEffects": false
+}
